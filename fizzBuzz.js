@@ -5,6 +5,8 @@ const fizzBuzz = (n) => {
     // we then check if its by 3 
     // lastly we check if it is by 5
     // if the number is not divisible we will add the number to an array
+    // space complexity is O(n)
+    // time complexity is O(n)
   
     let numsArr = [];
   
@@ -18,3 +20,4 @@ const fizzBuzz = (n) => {
     return numsArr
     
   };
+
