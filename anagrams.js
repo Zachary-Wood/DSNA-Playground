@@ -4,29 +4,29 @@
 // we then itereate through the count oject and if anything has a 1 we return false 
 
 
+
+    
+
 const anagrams = (s1, s2) => {
 
 
-    let count = {} // object to create our hash
-  
-    for (let char of s1) { // we iterate through are first string
-      if (!(char in count)) { // if the char is not in the count we int it to 0
-        count[char] = 0
-      }
-      count[char] += 1 // we then once its checked all of the chars we increment it 
+    const data = {}
+ 
+    for (let item of s1) {
+      if (!(item in data)) data[item] = 0;
+      data[item] += 1
     }
-  
-    for (let char of s2) { // we then itereate through the second string
-      if (count[char] == undefined) return false // if there is not number we return false
-      else count[char] -= 1 // of there is a number we decrement it 
-      
-    }
-    // console.log(count)
-    for (let char in count) { // we then iterate through the count obj
-      if (count[char] != 0) return false // if its not equal to zero that means its a stray letter so we return false
-      
-    }
-    return true // if everything passes through with hitting no flags to return false we return true
+ 
+   for (let item of s2) {
+     if (data[item] == undefined) return false
+     else data[item] -= 1
+   }
+ 
+   for (let item in data) {
+     if (data[item] != 0) return false
+   }
+ 
+   return true
+ };
     
     
-  };
