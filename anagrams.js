@@ -3,7 +3,8 @@
 // we iterate through the next string and if the letter is already in the count object we remove it
 // we then itereate through the count oject and if anything has a 1 we return false 
 
-
+// space complexity is O(n)
+// time complexity is O(n) 
 
     
 
