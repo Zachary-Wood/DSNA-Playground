@@ -21,14 +21,14 @@ const intersection = (a, b) => {
   };
 
 
-
   const intersectionSet = (a, b) => {
-    const result = [];
-    const setA = new Set(a);
+    
+  
+    let result = []
+    const setA = new Set(a)
+  
     for (let item of b) {
-      if (setA.has(item)) {
-        result.push(item);
-      }
+      if (setA.has(item)) result.push(item)
     }
-    return result;
+    return result
   };
