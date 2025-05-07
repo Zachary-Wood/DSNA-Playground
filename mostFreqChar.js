@@ -33,3 +33,5 @@ const mostFrequentChar = (s) => {
       
      
     }
+    return biggest // we return the biggest letter
+}
