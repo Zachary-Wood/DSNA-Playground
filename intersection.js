@@ -19,3 +19,16 @@ const intersection = (a, b) => {
   
     return result
   };
+
+
+
+  const intersectionSet = (a, b) => {
+    const result = [];
+    const setA = new Set(a);
+    for (let item of b) {
+      if (setA.has(item)) {
+        result.push(item);
+      }
+    }
+    return result;
+  };
