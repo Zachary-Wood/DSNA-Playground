@@ -16,3 +16,11 @@ const allUnique = (items) => {
     return true
     
   };
+
+
+  const allUniqueSet = (items) => {
+    // todo  
+    let set = new Set(items)
+    return set.size === items.length
+    
+  };
