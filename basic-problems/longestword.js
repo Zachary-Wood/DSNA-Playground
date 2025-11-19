@@ -7,3 +7,5 @@ const maxValue = (nums) => {
     }
     return max
   };
+
+  // added max value
