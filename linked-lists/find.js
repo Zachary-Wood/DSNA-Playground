@@ -8,3 +8,5 @@ const linkedListFind = (head, target) => {
     }
     return false
   };
+
+  //find link list
