@@ -10,3 +10,4 @@ const linkedListFind = (head, target) => {
   };
 
   //find link list
+  // added find
